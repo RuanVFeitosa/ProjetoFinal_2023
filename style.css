@@ -1,0 +1,511 @@
+/*font-family: 'OptimusPrinceps', sans-serif;
+font-family: 'OptimusPrincepsSemiBold', sans-serif;
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+header {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.header-divider {
+  width: 30%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  background-color: white;
+}
+
+
+.header img{
+  width: 100px;
+  background-color: white;
+}
+
+.header .name{
+  width: 200px;
+}
+
+.header a {
+  background-color: white;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: small;
+}
+
+.header a:hover {
+  background-color: black;
+   color: red;
+   transition: 0.6s;
+   border-radius: 10%;
+   text-decoration:line-through;
+}
+
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  font-family: 'OptimusPrinceps', sans-serif;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: red;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.directors {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.texto1 {
+  position: absolute;
+  top: 120%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background: none;
+  width: 200px;
+}
+
+.texto2 {
+  position: absolute;
+  top: 120%;
+  left: 37.5%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background: none;
+  width: 200px;
+}
+
+.texto3 {
+  position: absolute;
+  top: 120%;
+  left: 62.5%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background: none;
+  width: 200px;
+}
+
+.texto4 {
+  position: absolute;
+  top: 120%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background: none;
+  width: 150px;
+  
+}
+
+.image {
+  position: absolute;
+  top: 210%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+}
+
+.image p {
+  background: none;
+}
+
+.information p {
+  display: flex;
+  justify-content: center;
+}
+
+.table1{
+  float: left;
+  position: absolute;
+  top: 230%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background: none;
+  width: 800px;
+}
+
+
+.tableImage {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  opacity: 30%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap
+}
+
+.safe, .TV, .disk, .jukebox {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.texto {
+  color: white ;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 320px;
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+
+.safe, .TV, .disk, .jukebox h1 {
+  text-align: center;
+  align-content: center; 
+}
+
+.imagem {
+  width: 220px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.relevo-btn {
+  display: inline-block;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+  margin-top: 15px;
+}
+
+.relevo-btn:hover {
+  background-color: black;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  color: red;
+  text-decoration:line-through;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Top left text */
+
+.title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  width: 800px;
+  background-color: black;
+}
+
+.top-left {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  background: none;
+  background-color: black;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  background: none;
+  background-color: black;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  background-color: black;
+}
+
+.warning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centered text */
+.centered1 h1 {
+  position: absolute;
+  top: 385%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  color: red;
+  background-color: black;
+  word-spacing: 10px;
+  text-decoration: line-through;
+  word-spacing: 70px;
+}
+
+.centered2 h2 {
+  position: absolute;
+  top: 388%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  color: white;
+  color: red;
+  background-color: black;
+  word-spacing: 10px;
+  text-decoration: line-through;
+  word-spacing: 10px;
+}
+
+.restricred {
+  position: relative;
+  top: 200%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background: none;
+  width: 300px;
+}
+
+.restricred p {
+  position: relative;
+  top: 180%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background: none;
+  width: 300px;
+}
+
+.restricred button {
+  width: 270px;
+}
+
+.restricred iframe {
+  position: absolute;
+  top: 30%;
+  left: 230%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background: none;
+}
+
+.restricred button{
+  border: none;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.restricred button:hover{
+  text-decoration: line-through;
+  color: #f2f2f2 ;
+  background-image: url(img/5a934e84f67d2a61a118ec95b1d6cb74.gif);
+ }
+
+ .footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  background-color: white;
+ }
+
+ .footer img{
+  float: left;
+  width: 100px;
+  background-color: white;
+}
+
+.footer a {
+  background-color: white;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ .end {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  background-color: black;
+ }
+
+ .end img{
+  width: 100px;
+
+}
+
+.end a {
+  background-color: white;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li .name{
+   width: 500px
+
+}
+
+.myMap {
+  filter: grayscale(100%) invert(100%)
+}
